@@ -1,0 +1,42 @@
+# ── dependencies ─────────────────────────────────────────────
+node_modules/
+
+# ── build output (budowane w CI/GitHub Actions) ─────────────
+dist/
+dist-ssr/
+
+# ── logs ────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── env / secrets (lokalne ustawienia) ──────────────────────
+.env
+.env.*.local
+*.local
+
+# ── cache / tooling ─────────────────────────────────────────
+.vite/
+.cache/
+.eslintcache
+.stylelintcache
+.nyc_output/
+coverage/
+*.lcov
+
+# ── edytory / OS śmieci ─────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ── inne ────────────────────────────────────────────────────
+# (zostaw package-lock.json w repo – pomaga w powtarzalnych buildach)
